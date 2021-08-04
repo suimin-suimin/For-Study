@@ -3,11 +3,12 @@
 int main(){
   char buf[80],block[10][10]={};
 	int i,j,h,w=0;
-  
+
 	 //入出力用のコード h行w列の入力を想定
 	fgets(buf,sizeof(buf),stdin);
 	sscanf(buf,"%d %d\n",&h,&w);
 
+  //入力文を1行ずつblockに格納
 	for(i=0;i<h;i++){
 		fgets(buf,sizeof(buf),stdin);
 		sscanf(buf,"%s\n",block[i]);
